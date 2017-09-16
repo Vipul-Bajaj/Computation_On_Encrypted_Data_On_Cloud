@@ -4,42 +4,42 @@
 % Inverse of only Diagonal Sparse matrices is guranteed to be sparse
 % Platform : Octave
 
-% IF NOT USING CMD PLS MODIFY THIS 
+% IF USING CMD PLS MODIFY THIS 
 M= str2num(argv(){1});;
 
-% Generating all the random matrices.
+%Generating all the random matrices.
 
 DATA1 =  ceil(12 * rand(M,M));
 DATA2 =  ceil(13 * rand(M,M));
 
-% Plain Matrix Multiplication
+% ***  Plain Matrix Multiplication  *** 
 tic 
 plain_Mul = DATA1*DATA2;
 t_original = toc; 
 
 %Sparse Matrices Generation;
+tic;
 s1 = 12.56*circshift(speye(M),-2);
 s2 = 6*speye(M);
 s3 = 4.8*circshift(speye(M),-5);
 Zsparse = circshift(speye(M),-5);
 CM = randi([0,1],M,1); % coloum matrix
+t_sparse = toc;
 
-% Encryption 
+% ENCRYPTION 
 tic 
 EncDATA1 = (s1*DATA1*s2)+Zsparse;
 EncDATA2 = (inv(s2)*DATA2*s3)+Zsparse;
 t_encrypt=toc;
 
-% Cloud Side 
+% CLOUD SIDE 
 tic;
 Result = EncDATA1*EncDATA2;
 t_cloud = toc;
 
-% Precalculated variables on Client side
-T = Zsparse*Zsparse + s1*DATA1*s2*Zsparse + Zsparse*inv(s2)*DATA1*s1;
-
 % Decryption
 tic
+T = Zsparse*Zsparse + s1*DATA1*s2*Zsparse + Zsparse*inv(s2)*DATA1*s1;
 Decry_Ans = (inv(s1)*((Result - T))*inv(s3));
 t_decrypt=toc;
 
@@ -54,16 +54,16 @@ else
   printf("\nUnsuccessful\n");
 end
 
-t_client = t_encrypt + t_decrypt + t_verifiy;
+t_client = t_encrypt + t_sparse + t_decrypt + t_verifiy;
 printf("For %dx%d Matrix the timing values are\n",M,M);
 printf("T-Original = %.15f seconds\n",t_original);  %Time taken for plain multiplication. 
-printf("T-Cloud = %.15f seconds\n",t_cloud); %Time taken for encrypted matrices multiplication. 
-printf("Efficiency = %.2f %%\n",(t_original/t_cloud)*100); % Caluculating the efficiency.
+%printf("T-Cloud = %.15f seconds\n",t_cloud); Time taken for encrypted matrices multiplication. 
+%printf("Efficiency = %.2f %%\n",(t_original/t_cloud)*100);  Caluculating the efficiency.
 
 %For Client uncomment the below lines and comment the above 2 lines
-%printf("T-Encryption = %.15f seconds\n",t_encrypt); %Time taken for encryption.
-%printf("T-Decryption = %.15f seconds\n",t_decrypt); %Time taken for decryption.
-%printf("T-Verification = %.15f seconds\n",t_verifiy); %Time taken for verification.
-%printf("T-Client = %.15f seconds\n",t_client); %Total time taken by Client. 
-%printf("Gain %% = %.2f %%\n",(t_original/t_client)*100); % Calculating Gain.
+printf("T-Encryption = %.15f seconds\n",t_encrypt+t_sparse); %Time taken for encryption.
+printf("T-Decryption = %.15f seconds\n",t_decrypt); %Time taken for decryption.
+printf("T-Verification = %.15f seconds\n",t_verifiy); %Time taken for verification.
+printf("T-Client = %.15f seconds\n",t_client); %Total time taken by Client. 
+printf("Gain %% = %.2f %%\n",(t_original/t_client)*100); % Calculating Gain.
 clear;
