@@ -227,7 +227,6 @@ T-Original = 151.561541080474854 seconds
 T-Cloud = 151.910385131835938 seconds
 Efficiency = 99.77 %
 
-
 For 21000x21000 Matrix the timing values are
 T-Original = 163.534067869186401 seconds
 T-Cloud = 163.794775962829590 seconds
