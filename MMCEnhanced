@@ -1,56 +1,69 @@
 % Author : Harsh Pathak & Vipul Bajaj
 % 15 sept 2017
-% all the sparse matrices are Diagonal in nature or its permutations
+% All the Sparse Matrices are Diagonal in nature or its permutations
 % Inverse of only Diagonal Sparse matrices is guranteed to be sparse
 % Platform : Octave
 
-% IF USING CMD PLS MODIFY THIS 
-M = 1500
+% IF NOT USING CMD PLS MODIFY THIS 
+M= str2num(argv(){1});;
 
-%Generating all the random matrices.
+% Generating all the random matrices.
 
 DATA1 =  ceil(12 * rand(M,M));
 DATA2 =  ceil(13 * rand(M,M));
 
-% ***  Plain Matrix Multiplication  *** 
+% Plain Matrix Multiplication
 tic 
-DATA1*DATA2;
-t1 = toc;
-disp("DATA1*DATA2::"),disp(t1)
+plain_Mul = DATA1*DATA2;
+t_original = toc; 
 
-%sparse matrices generation;
-s1 = circshift(speye(M),-2);
+%Sparse Matrices Generation;
+s1 = 12.56*circshift(speye(M),-2);
 s2 = 6*speye(M);
-s3 = circshift(speye(M),-5);
-
-%Zsparse = sprandn(M,M,0.15);
+s3 = 4.8*circshift(speye(M),-5);
 Zsparse = circshift(speye(M),-5);
+CM = randi([0,1],M,1); % coloum matrix
 
-
-% ENCRYPTION 
+% Encryption 
 tic 
 EncDATA1 = (s1*DATA1*s2)+Zsparse;
 EncDATA2 = (inv(s2)*DATA2*s3)+Zsparse;
-t2=toc;
-disp("Total Encry time ::"),disp(t2)
+t_encrypt=toc;
 
-
-
-% CLOUD SIDE 
+% Cloud Side 
+tic;
 Result = EncDATA1*EncDATA2;
-
+t_cloud = toc;
 
 % Precalculated variables on Client side
 T = Zsparse*Zsparse + s1*DATA1*s2*Zsparse + Zsparse*inv(s2)*DATA1*s1;
 
-% try decrypting
+% Decryption
 tic
 Decry_Ans = (inv(s1)*((Result - T))*inv(s3));
-toc
+t_decrypt=toc;
 
-% Verification in Progress ! 
-CM = randi([0,1],M,1); % coloum matrix
+% Verification
+tic;
+int32 (round(Decry_Ans) * CM) == plain_Mul*CM;
+t_verifiy = toc;
 
+if(int32 (round(Decry_Ans) * CM) == plain_Mul*CM)
+  printf("\nSuccess\n");
+else
+  printf("\nUnsuccessful\n");
+end
 
+t_client = t_encrypt + t_decrypt + t_verifiy;
+printf("For %dx%d Matrix the timing values are\n",M,M);
+printf("T-Original = %.15f seconds\n",t_original);  %Time taken for plain multiplication. 
+printf("T-Cloud = %.15f seconds\n",t_cloud); %Time taken for encrypted matrices multiplication. 
+printf("Efficiency = %.2f %%\n",(t_original/t_cloud)*100); % Caluculating the efficiency.
 
-
+%For Client uncomment the below lines and comment the above 2 lines
+%printf("T-Encryption = %.15f seconds\n",t_encrypt); %Time taken for encryption.
+%printf("T-Decryption = %.15f seconds\n",t_decrypt); %Time taken for decryption.
+%printf("T-Verification = %.15f seconds\n",t_verifiy); %Time taken for verification.
+%printf("T-Client = %.15f seconds\n",t_client); %Total time taken by Client. 
+%printf("Gain %% = %.2f %%\n",(t_original/t_client)*100); % Calculating Gain.
+clear;
