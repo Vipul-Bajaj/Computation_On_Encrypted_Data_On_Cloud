@@ -1,0 +1,256 @@
+Cloud Specs:
+No. of Processors : 8
+RAM : 52GB
+Storage : 50GB of SSD
+ 
+Success
+For 500x500 Matrix the timing values are
+T-Original = 0.002628803253174 seconds
+T-Cloud = 0.002379894256592 seconds
+Efficiency = 110.46 %
+
+Success
+For 1000x1000 Matrix the timing values are
+T-Original = 0.016139984130859 seconds
+T-Cloud = 0.014256954193115 seconds
+Efficiency = 113.21 %
+
+Success
+For 1500x1500 Matrix the timing values are
+T-Original = 0.044574022293091 seconds
+T-Cloud = 0.049114942550659 seconds
+Efficiency = 90.75 %
+
+Success
+For 2000x2000 Matrix the timing values are
+T-Original = 0.119508981704712 seconds
+T-Cloud = 0.118711948394775 seconds
+Efficiency = 100.67 %
+
+Success
+For 2500x2500 Matrix the timing values are
+T-Original = 0.294655084609985 seconds
+T-Cloud = 0.300907135009766 seconds
+Efficiency = 97.92 %
+
+Success
+For 3000x3000 Matrix the timing values are
+T-Original = 0.506828069686890 seconds
+T-Cloud = 0.507642984390259 seconds
+Efficiency = 99.84 %
+
+Success
+For 3500x3500 Matrix the timing values are
+T-Original = 0.782095909118652 seconds
+T-Cloud = 0.786417007446289 seconds
+Efficiency = 99.45 %
+
+Success
+For 4000x4000 Matrix the timing values are
+T-Original = 1.175315856933594 seconds
+T-Cloud = 1.167154788970947 seconds
+Efficiency = 100.70 %
+
+Success
+For 4500x4500 Matrix the timing values are
+T-Original = 1.680258989334106 seconds
+T-Cloud = 1.670812845230103 seconds
+Efficiency = 100.57 %
+
+Success
+For 5000x5000 Matrix the timing values are
+T-Original = 2.287536144256592 seconds
+T-Cloud = 2.284009933471680 seconds
+Efficiency = 100.15 %
+
+Success
+For 5500x5500 Matrix the timing values are
+T-Original = 3.040120840072632 seconds
+T-Cloud = 3.027452230453491 seconds
+Efficiency = 100.42 %
+
+Success
+For 6000x6000 Matrix the timing values are
+T-Original = 3.985162019729614 seconds
+T-Cloud = 3.927580118179321 seconds
+Efficiency = 101.47 %
+
+Success
+For 6500x6500 Matrix the timing values are
+T-Original = 5.006999015808105 seconds
+T-Cloud = 4.993230104446411 seconds
+Efficiency = 100.28 %
+
+Success
+For 7000x7000 Matrix the timing values are
+T-Original = 6.186876058578491 seconds
+T-Cloud = 6.198975086212158 seconds
+Efficiency = 99.80 %
+
+Success
+For 7500x7500 Matrix the timing values are
+T-Original = 7.503036022186279 seconds
+T-Cloud = 7.508424997329712 seconds
+Efficiency = 99.93 %
+
+Success
+For 8000x8000 Matrix the timing values are
+T-Original = 9.166977882385254 seconds
+T-Cloud = 9.159410953521729 seconds
+Efficiency = 100.08 %
+
+Success
+For 8500x8500 Matrix the timing values are
+T-Original = 10.969913005828857 seconds
+T-Cloud = 11.003872871398926 seconds
+Efficiency = 99.69 %
+
+Success
+For 9000x9000 Matrix the timing values are
+T-Original = 13.195958137512207 seconds
+T-Cloud = 13.087163925170898 seconds
+Efficiency = 100.83 %
+
+Success
+For 9500x9500 Matrix the timing values are
+T-Original = 15.389595985412598 seconds
+T-Cloud = 15.364851951599121 seconds
+Efficiency = 100.16 %
+
+Unsuccessful
+For 10000x10000 Matrix the timing values are
+T-Original = 16.009896993637085 seconds
+T-Cloud = 17.601392030715942 seconds
+Efficiency = 90.96 %
+
+Unsuccessful
+For 10500x10500 Matrix the timing values are
+T-Original = 18.966769218444824 seconds
+T-Cloud = 20.346372127532959 seconds
+Efficiency = 93.22 %
+
+Unsuccessful
+For 11000x11000 Matrix the timing values are
+T-Original = 21.690771818161011 seconds
+T-Cloud = 23.607152938842773 seconds
+Efficiency = 91.88 %
+
+Unsuccessful
+For 11500x11500 Matrix the timing values are
+T-Original = 25.465703964233398 seconds
+T-Cloud = 27.205862045288086 seconds
+Efficiency = 93.60 %
+
+Unsuccessful
+For 12000x12000 Matrix the timing values are
+T-Original = 28.395233154296875 seconds
+T-Cloud = 30.469288825988770 seconds
+Efficiency = 93.19 %
+
+Unsuccessful
+For 12500x12500 Matrix the timing values are
+T-Original = 33.137152910232544 seconds
+T-Cloud = 34.722978115081787 seconds
+Efficiency = 95.43 %
+
+Unsuccessful
+For 13000x13000 Matrix the timing values are
+T-Original = 38.087846994400024 seconds
+T-Cloud = 38.868041992187500 seconds
+Efficiency = 97.99 %
+
+Unsuccessful
+For 13500x13500 Matrix the timing values are
+T-Original = 42.356137990951538 seconds
+T-Cloud = 43.300329208374023 seconds
+Efficiency = 97.82 %
+
+Unsuccessful
+For 14000x14000 Matrix the timing values are
+T-Original = 46.825609207153320 seconds
+T-Cloud = 48.259330034255981 seconds
+Efficiency = 97.03 %
+
+Unsuccessful
+For 14500x14500 Matrix the timing values are
+T-Original = 52.520282030105591 seconds
+T-Cloud = 53.864274024963379 seconds
+Efficiency = 97.50 %
+
+Unsuccessful
+For 15000x15000 Matrix the timing values are
+T-Original = 58.389204978942871 seconds
+T-Cloud = 59.610464096069336 seconds
+Efficiency = 97.95 %
+
+Unsuccessful
+For 15500x15500 Matrix the timing values are
+T-Original = 64.695460081100464 seconds
+T-Cloud = 65.561442136764526 seconds
+Efficiency = 98.68 %
+
+Unsuccessful
+For 16000x16000 Matrix the timing values are
+T-Original = 71.013462066650391 seconds
+T-Cloud = 71.745795965194702 seconds
+Efficiency = 98.98 %
+
+Unsuccessful
+For 16500x16500 Matrix the timing values are
+T-Original = 78.257222175598145 seconds
+T-Cloud = 77.453938007354736 seconds
+Efficiency = 101.04 %
+
+Unsuccessful
+For 17000x17000 Matrix the timing values are
+T-Original = 85.333053112030029 seconds
+T-Cloud = 85.345552206039429 seconds
+Efficiency = 99.99 %
+
+Unsuccessful
+For 17500x17500 Matrix the timing values are
+T-Original = 93.140377998352051 seconds
+T-Cloud = 93.664276123046875 seconds
+Efficiency = 99.44 %
+
+Unsuccessful
+For 18000x18000 Matrix the timing values are
+T-Original = 101.480674982070923 seconds
+T-Cloud = 101.968886137008667 seconds
+Efficiency = 99.52 %
+
+Unsuccessful
+For 18500x18500 Matrix the timing values are
+T-Original = 111.231128931045532 seconds
+T-Cloud = 110.284446954727173 seconds
+Efficiency = 100.86 %
+
+Unsuccessful
+For 19000x19000 Matrix the timing values are
+T-Original = 117.673303127288818 seconds
+T-Cloud = 119.151823997497559 seconds
+Efficiency = 98.76 %
+
+Unsuccessful
+For 19500x19500 Matrix the timing values are
+T-Original = 129.023737907409668 seconds
+T-Cloud = 129.974792957305908 seconds
+Efficiency = 99.27 %
+
+Unsuccessful
+For 20000x20000 Matrix the timing values are
+T-Original = 138.517518997192383 seconds
+T-Cloud = 139.113164901733398 seconds
+Efficiency = 99.57 %
+
+Unsuccessful
+For 20500x20500 Matrix the timing values are
+T-Original = 151.561541080474854 seconds
+T-Cloud = 151.910385131835938 seconds
+Efficiency = 99.77 %
+
+Unsuccessful
+For 21000x21000 Matrix the timing values are
+T-Original = 163.534067869186401 seconds
+T-Cloud = 163.794775962829590 seconds
+Efficiency = 99.84 %
