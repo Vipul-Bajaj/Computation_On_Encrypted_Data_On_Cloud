@@ -1,0 +1,243 @@
+
+Success
+For 500x500 Matrix the timing values are
+T-Original = 0.119524002075195 seconds
+T-Encryption = 0.013491868972778 seconds
+T-Decryption = 0.009729146957397 seconds
+T-Verification = 0.021420001983643 seconds
+T-Client = 0.044641017913818 seconds
+Gain % = 267.74 %
+
+Success
+For 1000x1000 Matrix the timing values are
+T-Original = 0.023983955383301 seconds
+T-Encryption = 0.014678955078125 seconds
+T-Decryption = 0.028086900711060 seconds
+T-Verification = 0.005303859710693 seconds
+T-Client = 0.048069715499878 seconds
+Gain % = 49.89 %
+
+Success
+For 1500x1500 Matrix the timing values are
+T-Original = 0.074589014053345 seconds
+T-Encryption = 0.033808231353760 seconds
+T-Decryption = 0.064033985137939 seconds
+T-Verification = 0.011036872863770 seconds
+T-Client = 0.108879089355469 seconds
+Gain % = 68.51 %
+
+Success
+For 2000x2000 Matrix the timing values are
+T-Original = 0.160027980804443 seconds
+T-Encryption = 0.051155805587769 seconds
+T-Decryption = 0.116235017776489 seconds
+T-Verification = 0.026443004608154 seconds
+T-Client = 0.193833827972412 seconds
+Gain % = 82.56 %
+
+Success
+For 2500x2500 Matrix the timing values are
+T-Original = 0.569268941879272 seconds
+T-Encryption = 0.086657047271729 seconds
+T-Decryption = 0.213265895843506 seconds
+T-Verification = 0.040948152542114 seconds
+T-Client = 0.340871095657349 seconds
+Gain % = 167.00 %
+
+Success
+For 3000x3000 Matrix the timing values are
+T-Original = 0.985650062561035 seconds
+T-Encryption = 0.115342855453491 seconds
+T-Decryption = 0.304196119308472 seconds
+T-Verification = 0.059293031692505 seconds
+T-Client = 0.478832006454468 seconds
+Gain % = 205.84 %
+
+Success
+For 3500x3500 Matrix the timing values are
+T-Original = 1.544452905654907 seconds
+T-Encryption = 0.161936044692993 seconds
+T-Decryption = 0.412689208984375 seconds
+T-Verification = 0.083053112030029 seconds
+T-Client = 0.657678365707397 seconds
+Gain % = 234.83 %
+
+Success
+For 4000x4000 Matrix the timing values are
+T-Original = 2.279386043548584 seconds
+T-Encryption = 0.199482917785645 seconds
+T-Decryption = 0.582485914230347 seconds
+T-Verification = 0.111286878585815 seconds
+T-Client = 0.893255710601807 seconds
+Gain % = 255.18 %
+
+Success
+For 4500x4500 Matrix the timing values are
+T-Original = 3.263229131698608 seconds
+T-Encryption = 0.258433818817139 seconds
+T-Decryption = 0.704456090927124 seconds
+T-Verification = 0.139102935791016 seconds
+T-Client = 1.101992845535278 seconds
+Gain % = 296.12 %
+
+Success
+For 5000x5000 Matrix the timing values are
+T-Original = 4.440548896789551 seconds
+T-Encryption = 0.310612201690674 seconds
+T-Decryption = 0.795598030090332 seconds
+T-Verification = 0.164532899856567 seconds
+T-Client = 1.270743131637573 seconds
+Gain % = 349.45 %
+
+Success
+For 5500x5500 Matrix the timing values are
+T-Original = 5.903366088867188 seconds
+T-Encryption = 0.361600160598755 seconds
+T-Decryption = 0.914531946182251 seconds
+T-Verification = 0.196552991867065 seconds
+T-Client = 1.472685098648071 seconds
+Gain % = 400.86 %
+
+Success
+For 6000x6000 Matrix the timing values are
+T-Original = 7.612246990203857 seconds
+T-Encryption = 0.439249038696289 seconds
+T-Decryption = 1.086180925369263 seconds
+T-Verification = 0.234651088714600 seconds
+T-Client = 1.760081052780151 seconds
+Gain % = 432.49 %
+
+Success
+For 6500x6500 Matrix the timing values are
+T-Original = 9.733215093612671 seconds
+T-Encryption = 0.545228004455566 seconds
+T-Decryption = 1.464002132415771 seconds
+T-Verification = 0.309401035308838 seconds
+T-Client = 2.318631172180176 seconds
+Gain % = 419.78 %
+
+Success
+For 7000x7000 Matrix the timing values are
+T-Original = 12.115279912948608 seconds
+T-Encryption = 0.648809194564819 seconds
+T-Decryption = 1.584152936935425 seconds
+T-Verification = 0.334594964981079 seconds
+T-Client = 2.567557096481323 seconds
+Gain % = 471.86 %
+
+Success
+For 7500x7500 Matrix the timing values are
+T-Original = 14.878294944763184 seconds
+T-Encryption = 0.676626920700073 seconds
+T-Decryption = 1.671931028366089 seconds
+T-Verification = 0.370702981948853 seconds
+T-Client = 2.719260931015015 seconds
+Gain % = 547.14 %
+
+Success
+For 8000x8000 Matrix the timing values are
+T-Original = 17.970431089401245 seconds
+T-Encryption = 0.766776800155640 seconds
+T-Decryption = 1.913670063018799 seconds
+T-Verification = 0.407999992370605 seconds
+T-Client = 3.088446855545044 seconds
+Gain % = 581.86 %
+
+Success
+For 8500x8500 Matrix the timing values are
+T-Original = 21.732516050338745 seconds
+T-Encryption = 0.858040094375610 seconds
+T-Decryption = 2.179404020309448 seconds
+T-Verification = 0.476830959320068 seconds
+T-Client = 3.514275074005127 seconds
+Gain % = 618.41 %
+
+Success
+For 9000x9000 Matrix the timing values are
+T-Original = 25.715496063232422 seconds
+T-Encryption = 0.996388196945190 seconds
+T-Decryption = 2.438569068908691 seconds
+T-Verification = 0.533662080764771 seconds
+T-Client = 3.968619346618652 seconds
+Gain % = 647.97 %
+
+Success
+For 9500x9500 Matrix the timing values are
+T-Original = 30.323116064071655 seconds
+T-Encryption = 1.119564056396484 seconds
+T-Decryption = 2.762032985687256 seconds
+T-Verification = 0.618985891342163 seconds
+T-Client = 4.500582933425903 seconds
+Gain % = 673.76 %
+
+Unsuccessful
+For 10000x10000 Matrix the timing values are
+T-Original = 35.150825023651123 seconds
+T-Encryption = 1.220864057540894 seconds
+T-Decryption = 3.050777912139893 seconds
+T-Verification = 0.675529003143311 seconds
+T-Client = 4.947170972824097 seconds
+Gain % = 710.52 %
+
+Unsuccessful
+For 10500x10500 Matrix the timing values are
+T-Original = 40.937193870544434 seconds
+T-Encryption = 1.391242980957031 seconds
+T-Decryption = 3.329301834106445 seconds
+T-Verification = 0.733652114868164 seconds
+T-Client = 5.454196929931641 seconds
+Gain % = 750.56 %
+
+Unsuccessful
+For 11000x11000 Matrix the timing values are
+T-Original = 46.874920129776001 seconds
+T-Encryption = 1.466337919235229 seconds
+T-Decryption = 3.860615015029907 seconds
+T-Verification = 0.845048904418945 seconds
+T-Client = 6.172001838684082 seconds
+Gain % = 759.48 %
+
+Unsuccessful
+For 11500x11500 Matrix the timing values are
+T-Original = 53.430377960205078 seconds
+T-Encryption = 1.747666835784912 seconds
+T-Decryption = 3.971308946609497 seconds
+T-Verification = 0.868993043899536 seconds
+T-Client = 6.587968826293945 seconds
+Gain % = 811.03 %
+
+Unsuccessful
+For 12000x12000 Matrix the timing values are
+T-Original = 59.096024036407471 seconds
+T-Encryption = 1.770720958709717 seconds
+T-Decryption = 4.192615985870361 seconds
+T-Verification = 0.934208869934082 seconds
+T-Client = 6.897545814514160 seconds
+Gain % = 856.77 %
+
+Unsuccessful
+For 12500x12500 Matrix the timing values are
+T-Original = 67.323934078216553 seconds
+T-Encryption = 1.927614927291870 seconds
+T-Decryption = 5.040940999984741 seconds
+T-Verification = 1.083525896072388 seconds
+T-Client = 8.052081823348999 seconds
+Gain % = 836.11 %
+
+Unsuccessful
+For 13000x13000 Matrix the timing values are
+T-Original = 75.493628978729248 seconds
+T-Encryption = 1.983664989471436 seconds
+T-Decryption = 4.887953996658325 seconds
+T-Verification = 1.082324981689453 seconds
+T-Client = 7.953943967819214 seconds
+Gain % = 949.13 %
+
+Unsuccessful
+For 13500x13500 Matrix the timing values are
+T-Original = 85.127717018127441 seconds
+T-Encryption = 2.388772964477539 seconds
+T-Decryption = 6.332060098648071 seconds
+T-Verification = 1.302831888198853 seconds
+T-Client = 10.023664951324463 seconds
+Gain % = 849.27 %
