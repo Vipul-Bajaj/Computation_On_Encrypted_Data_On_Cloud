@@ -3,7 +3,7 @@
 % All the Sparse Matrices are Diagonal in nature or its permutations
 % Inverse of only Diagonal Sparse matrices is guranteed to be sparse
 % Platform : Octave
-% All rights reseverd to the Authors 
+% All rights reserved to the Authors 
 
 M= str2num(argv(){1});;
 
