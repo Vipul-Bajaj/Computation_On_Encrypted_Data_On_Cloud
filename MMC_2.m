@@ -5,7 +5,8 @@
 % Platform : Octave
 
 % IF USING CMD PLS MODIFY THIS 
-M= 3500;
+M= str2num(argv(){1});;
+
 
 %Generating all the random matrices.
 
